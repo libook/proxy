@@ -46,7 +46,6 @@ html { overflow-y: scroll; }
 @media (min-width: 768px) {
 
 	.tm-middle,
-	.tm-section,
 	.tm-footer { padding: 90px 0; }
 
 }
@@ -55,7 +54,6 @@ html { overflow-y: scroll; }
 @media (min-width: 1220px) {
 
 	.tm-middle,
-	.tm-section,
 	.tm-footer { padding: 120px 0; }
 
 }
@@ -89,7 +87,11 @@ html { overflow-y: scroll; }
 .tm-section .uk-heading-large { margin-bottom: 20px; }
 .tm-section .uk-text-large { margin-bottom: 60px; }
 
-.tm-section-color-1 { background: #2ba3d4 url("../images/bg_teaser.svg") 50% 50% no-repeat; }
+.tm-section-color-1 { 
+  background: #2ba3d4 url("../img/bg_teaser.svg") 50% 50% no-repeat; 
+  background-attachment: fixed;
+  
+}
 
 /* Only phones */
 @media (max-width: 959px) {
@@ -121,7 +123,6 @@ html { overflow-y: scroll; }
  * Header section
  */
 
-.tm-logo { margin: 10px 0 20px 0; }
 
 .tm-button-download {
 	margin: -30px 0 15px 0;
@@ -646,5 +647,5 @@ input.sp-input {
 }
 
 .logo{
-  width:200px;
+  width:130px;
 }
