@@ -135,6 +135,7 @@ html { overflow-y: scroll; }
 	padding: 0 30px;
 	line-height: 50px;
 	font-size: 18px;
+  cursor:pointer;
 }
 
 .tm-button-download:hover {
@@ -642,4 +643,8 @@ input.sp-input {
 
 .uk-navbar-brand{
 	color: #fff;
+}
+
+.logo{
+  width:200px;
 }
