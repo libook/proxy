@@ -18,6 +18,15 @@
             positionProperty: 'transform',
             hideDistantElements: false
           });
+          $.ajax({
+            dataType : "json",
+            url      : "https://api.github.com/repos/song940/raspi?nocache="+ +new Date,
+            success  : function(data){
+              if(!data) return;
+              $("[data-uikit-stargazers]").html(data.watchers);
+              $("[data-uikit-forks]").html(data.forks);
+            }
+          });
         });
       })(jQuery);
     </script>
@@ -43,8 +52,8 @@
 				<a href="http://blog.lsong.org/2013/07/getting-started-with-raspberry-pi/" class="uk-button tm-button-download">Get Started</a>
 
 				<ul class="tm-subnav uk-subnav">
-					<li><a href="https://github.com/uikit/uikit">GitHub</a></li>
-					<li><a href="docs/documentation_get-started.html">Get Started</a></li>
+					<li><a href="https://github.com/song940/raspi">GitHub</a></li>
+					<li><a href="https://github.com/song940/raspi/archive/master.zip">Download</a></li>
 					<li data-uikit-version></li>
 				</ul>
 
@@ -167,15 +176,15 @@
 			<div class="uk-container uk-container-center uk-text-center">
 
 				<ul class="uk-subnav uk-subnav-line">
-					<li><a href="https://github.com/uikit/uikit">GitHub</a></li>
-					<li><a href="https://github.com/uikit/uikit/issues">Issues</a></li>
-					<li><a href="https://github.com/uikit/uikit/blob/master/CHANGELOG.md">Changelog</a></li>
-					<li><a href="https://twitter.com/getuikit">Twitter</a></li>
+					<li><a href="http://rasp.lsong.org">Homepage</a></li>
+					<li><a href="http://blog.lsong.org/tag/raspberrypi/">Blog</a></li>
+					<li><a href="http://forum.lsong.org/viewforum.php?f=5">Forum</a></li>
+					<li><a href="https://twitter.com/song940">Twitter</a></li>
 				</ul>
 
 				<div class="uk-panel">
-					<p>Made by <a href="http://www.yootheme.com">YOOtheme</a> with love and caffeine.<br class="uk-hidden-small">Licensed under <a href="http://opensource.org/licenses/MIT">MIT license</a>.</p>
-					<a href="index.html"><img src="img/logo_uikit.svg" width="90" height="30" title="Raspi" alt="Raspi"></a>
+					<p>Made by <a href="http://www.yootheme.com">YOOtheme</a> with love and caffeine.<br class="uk-hidden-small">Licensed under <a href="http://lsong.mit-license.org">MIT license</a>.</p>
+					<a href="//lsong.org"><img src="img/logo_uikit.svg" width="90" height="30" title="LSONG.ORG" alt="LSONG.ORG"></a>
 				</div>
 
 			</div>
