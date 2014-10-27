@@ -3,172 +3,78 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Raspberry Pi | LSONG.ORG</title>
-		<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
-		<link href="./css/uikit.min.css" media="screen" rel="stylesheet" />
-		<link href="./css/uikit.docs.min.css" media="screen" rel="stylesheet" />
-		<link href="./css/theme.css" media="screen" rel="stylesheet" />
+		<title>Proxy | LSONG.ORG</title>
+		<link href="./css/uikit.min.css" 	media="screen" rel="stylesheet" />
+		<link href="./css/uikit.docs.min.css" 	media="screen" rel="stylesheet" />
+		<link href="./css/theme.css" 		media="screen" rel="stylesheet" />
 		<script src="./js/jquery.js"></script>
 		<script src="./js/jquery.stellar.js"></script>
-		<script src="./js/uikit.min.js"></script>
-    <script type="text/javascript" charset="utf-8">
-      (function(jq){
-        jq(function($){
-          $(window).stellar({
-            positionProperty: 'transform',
-            hideDistantElements: false
-          });
-          $.ajax({
-            dataType : "json",
-            url      : "https://api.github.com/repos/song940/raspi?nocache="+ +new Date,
-            success  : function(data){
-              if(!data) return;
-              $("[data-uikit-stargazers]").html(data.watchers);
-              $("[data-uikit-forks]").html(data.forks);
-            }
-          });
-        });
-      })(jQuery);
-    </script>
+		<style>
+		  .title{
+		    padding: 250px 0;
+		  }
+		  input{
+	  	    font-family: monospace;
+		  }
+		  h1{
+	            font-family: 'Indie Flower';
+	          }
+		  .powerd-by{
+		    font-size: 18px;
+		  }
+
+		  .powerd-by-thanks{
+		    color: #E74C3C; 
+		  }
+		</style>
 	</head>
 	<body class="tm-background">
 
 		<nav class="tm-navbar uk-navbar uk-navbar-attached">
 			<div class="uk-container uk-container-center">
-				<a class="uk-navbar-brand uk-hidden-small" href="/">Raspberry Pi</a>
+				<a class="uk-navbar-brand uk-hidden-small" href="/">Proxy</a>
 				<ul class="uk-navbar-nav uk-hidden-small">
-					<li><a href="http://blog.lsong.org/2013/07/getting-started-with-raspberry-pi/">Get Started</a></li>
+					<li><a href="#install">Get Started</a></li>
 				</ul>
 				<a href="#tm-offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
-				<div class="uk-navbar-brand uk-navbar-center uk-visible-small">Raspberry Pi</div>
+				<div class="uk-navbar-brand uk-navbar-center uk-visible-small">Old Man Proxy</div>
 			</div>
 		</nav>
 
-		<div class="tm-section tm-section-color-1 tm-section-colored">
+		<div class="tm-section tm-section-color-1 tm-section-colored title">
 			<div class="uk-container uk-container-center uk-text-center">
-        <img src="./img/raspi_logo.svg" class="logo" data-stellar-ratio="1.5" />
-				<h1 class="uk-heading-large" data-stellar-ratio="1.3" >Raspberry Pi</h1>
-				<p class="uk-text-large" data-stellar-ratio="1.1">The Raspberry Pi is a credit-card sized computer that plugs into your TV and a keyboard. It’s a capable little PC which can be used for many of the things that your desktop PC does, like spreadsheets, word-processing and games. It also plays high-definition video. We want to see it being used by kids all over the world to learn programming.</p>
-				<a href="http://blog.lsong.org/2013/07/getting-started-with-raspberry-pi/" class="uk-button tm-button-download">Get Started</a>
-
-				<ul class="tm-subnav uk-subnav">
-					<li><a href="https://github.com/song940/raspi">GitHub</a></li>
-					<li><a href="https://github.com/song940/raspi/archive/master.zip">Download</a></li>
-					<li data-uikit-version></li>
-				</ul>
-
-				<ul class="tm-subnav uk-subnav">
-					<li><a href="https://github.com/song940/raspi/stargazers"><i class="uk-icon-star"></i> <span data-uikit-stargazers>730</span> stargazers</a></li>
-					<li><a href="https://github.com/song940/raspi/network"><i class="uk-icon-code-fork"></i> <span data-uikit-forks>100</span> forks</a></li>
-					<li><a href="https://twitter.com/song940"><i class="uk-icon-twitter"></i> @song940</a></li>
-				</ul>
+				<h1 class=" uk-heading-large" data-stellar-ratio="1.3" > 让一切触手可及</h1>
+                                <p class="uk-text-large" data-stellar-ratio="1.1" ><q>老翁逾墙走，老妇出门看。  - 杜甫 《石壕吏》</q></p>
+				<a href="#install" class="uk-button tm-button-download"> 立刻使用</a>
 
 			</div>
 		</div>
 
-		<div class="tm-section tm-section-color-2 tm-section-colored">
+		<div id="install" class="tm-section tm-section-color-2 tm-section-colored">
 			<div class="uk-container uk-container-center uk-text-center">
 
-				<h1 class="uk-heading-large">Features</h1>
-
-				<p class="uk-text-large">Raspi gives you a comprehensive collection of HTML, CSS, and JS components<br class="uk-hidden-small"> which is simple to use, easy to customize and extendable.</p>
-
-				<div class="uk-grid" data-uk-grid-margin>
-
-					<div class="uk-width-medium-1-4">
-						<div class="uk-panel">
-							<img class="tm-image-pull" src="img/icon_less.svg" width="200" height="140" alt="LESS">
-							<h2 class="uk-margin-top-remove">LESS</h2>
-							<p>Raspi is developed in <a href="#">LESS</a> to write well-structured, extendable code which is easy to maintain.</p>
-						</div>
-					</div>
-					<div class="uk-width-medium-1-4">
-						<div class="uk-panel">
-							<img class="tm-image-pull" src="img/icon_components.svg" width="200" height="140" alt="Components">
-							<h2 class="uk-margin-top-remove">Components</h2>
-							<p>A collection of small, responsive components using consistent and conflict-free naming conventions.</p>
-						</div>
-					</div>
-					<div class="uk-width-medium-1-4">
-						<div class="uk-panel">
-							<img class="tm-image-pull" src="img/icon_themes.svg" width="200" height="140" alt="Themes">
-							<h2 class="uk-margin-top-remove">Customizer</h2>
-							<p>Raspi's very basic style can be extended with themes and is easy to customize to create your own look.</p>
-						</div>
-					</div>
-					<div class="uk-width-medium-1-4">
-						<div class="uk-panel">
-							<img class="tm-image-pull" src="img/icon_responsive.svg" width="200" height="140" alt="Responsive">
-							<h2 class="uk-margin-top-remove">Responsive</h2>
-							<p>With the mobile-first approach Raspi provides a consistent experience from phones and tablets to desktops.</p>
-						</div>
-					</div>
-				</div>
-
+				<h1 class="uk-heading-large">Install</h1>
+				<form class="uk-form" >
+				<input type="text" value="http://proxy.lsong.org/proxy.pac" class="uk-form-width-large uk-text-center" readonly  />	
+				</form>
 			</div>
 		</div>
 
 		<div class="tm-section tm-section-color-white">
 			<div class="uk-container uk-container-center uk-text-center">
 
-				<h1 class="uk-heading-large">Open Source</h1>
-
-				<p class="uk-text-large">Raspi is an open source framework to make the web look good.<br class="uk-hidden-small"> Create your own styles and discover the unlimited use of Raspi.</p>
-
-				<div class="uk-grid uk-grid-divider" data-uk-grid-margin>
-
-					<div class="uk-width-medium-1-3">
-						<div class="uk-panel">
-							<h2>MIT License</h2>
-							<p>Raspi is open source and <a href="http://opensource.org/licenses/MIT">MIT</a> licensed. It is absolutely free of charge and you can use, copy, merge, publish and distribute the framework without any limitations.</p>
-						</div>
-					</div>
-					<div class="uk-width-medium-1-3">
-						<div class="uk-panel">
-							<h2>Our Heroes</h2>
-							<p>A big thanks to LESS, jQuery, normalize.css and FontAwesome. Raspi wouldn't be possible without these awesome open source projects.</p>
-						</div>
-					</div>
-					<div class="uk-width-medium-1-3">
-						<div class="uk-panel">
-							<h2>Active Development</h2>
-							<p>Raspi is built by <a href="http://www.yootheme.com">YOOtheme</a>, using our extensive experience in creating Joomla and WordPress themes, to power the <a href="http://www.yootheme.com/themes/warp-framework">Warp theme framework</a>.</p>
-						</div>
-					</div>
-				</div>
+				<h1 class="uk-heading-large">How to</h1>
+				<video src="how-to-set-proxy.mp4" controls ></video>
 
 			</div>
 		</div>
-		<div class="tm-section tm-section-color-2 tm-section-colored">
+		<div class="tm-section tm-section-color-2 tm-section-colored" >
 			<div class="uk-container uk-container-center uk-text-center">
-
-				<h1 class="uk-heading-large">Get involved</h1>
-
-				<p class="uk-text-large">Raspi is hosted on <a href="https://github.com/song940/raspi">GitHub</a> and open for everyone to contribute.<br class="uk-hidden-small"> Please give us some feedback and join the development!</p>
-
-				<div class="uk-grid uk-grid-divider" data-uk-grid-margin>
-
-					<div class="uk-width-medium-1-3">
-						<div class="uk-panel">
-							<h2>Contribute</h2>
-							<p>You want to help us and participate in the development or the documentation? Just fork Raspi on <a href="https://github.com/uikit/uikit">GitHub</a> and send us a pull request.</p>
-						</div>
-					</div>
-					<div class="uk-width-medium-1-3">
-						<div class="uk-panel">
-							<h2>Found a bug?</h2>
-							<p>Open a <a href="https://github.com/uikit/uikit/issues">new issue</a> on GitHub. Please search for existing issues first and make sure to include all relevant information.</p>
-						</div>
-					</div>
-					<div class="uk-width-medium-1-3">
-						<div class="uk-panel">
-							<h2>Share themes</h2>
-							<p>You created a beautiful Raspi theme? We would love to share it with the community and add it to the Raspi customizer. Send us a pull request.</p>
-						</div>
-					</div>
-
-				</div>
-
+				<h1 class="uk-heading-large" >POWERD BY</h1>
+				<ul class="powerd-by uk-subnav">
+					<li>由 <a href="http://libook.com.cn" target="_blank" >@danyang</a> 提供的位于 <a href="https://www.digitalocean.com/?refcode=937176cc3b3a" >DigitalOcean</a> <a href="http://speedtest-sgp1.digitalocean.com">新加坡机房</a> 的服务器</li>
+				</ul>
+				<p class="powerd-by-thanks" >&hearts; 感谢以上服务器提供者为我们带来稳定且快速的服务体验</p>
 			</div>
 		</div>
 
@@ -176,101 +82,12 @@
 			<div class="uk-container uk-container-center uk-text-center">
 
 				<ul class="uk-subnav uk-subnav-line">
-					<li><a href="http://rasp.lsong.org">Homepage</a></li>
-					<li><a href="http://blog.lsong.org/tag/raspberrypi/">Blog</a></li>
-					<li><a href="http://forum.lsong.org/viewforum.php?f=5">Forum</a></li>
+					<li><a href="https://blog.lsong.org">Blog</a></li>
+					<li><a href="https://forum.lsong.org">Forum</a></li>
 					<li><a href="https://twitter.com/song940">Twitter</a></li>
 				</ul>
-
-				<div class="uk-panel">
-					<p>Made by <a href="http://www.yootheme.com">YOOtheme</a> with love and caffeine.<br class="uk-hidden-small">Licensed under <a href="http://lsong.mit-license.org">MIT license</a>.</p>
-					<a href="//lsong.org"><img src="img/logo_uikit.svg" width="90" height="30" title="LSONG.ORG" alt="LSONG.ORG"></a>
-				</div>
-
+				<h1><a href="//lsong.org" >LSONG.ORG</a></h1>
 			</div>
-		</div>
-
-		<div id="tm-offcanvas" class="uk-offcanvas">
-
-			<div class="uk-offcanvas-bar">
-
-                <ul class="uk-nav uk-nav-offcanvas uk-nav-parent-icon" data-uk-nav="{ multiple: true }">
-					<li class="uk-parent"><a href="#">Documentation</a>
-						<ul class="uk-nav-sub">
-							<li><a href="docs/documentation_get-started.html">Get started</a></li>
-							<li><a href="docs/documentation_how-to-customize.html">How to customize</a></li>
-							<li><a href="docs/components.html">Components</a></li>
-							<li><a href="docs/documentation_project-structure.html">Project structure</a></li>
-							<li><a href="docs/documentation_variables.html">Variables</a></li>
-							<li><a href="docs/documentation_create-a-theme.html">Create a theme</a></li>
-							<li><a href="docs/documentation_customizer-json.html">Customizer.json</a></li>
-						</ul>
-					</li>
-					<li class="uk-nav-header">Components</li>
-					<li class="uk-parent"><a href="#"><i class="uk-icon-wrench"></i> Defaults</a>
-						<ul class="uk-nav-sub">
-							<li><a href="docs/normalize.html">Normalize</a></li>
-							<li><a href="docs/base.html">Base</a></li>
-							<li><a href="docs/print.html">Print</a></li>
-						</ul>
-					</li>
-					<li class="uk-parent"><a href="#"><i class="uk-icon-th-large"></i> Layout</a>
-						<ul class="uk-nav-sub">
-							<li><a href="docs/grid.html">Grid</a></li>
-							<li><a href="docs/panel.html">Panel</a></li>
-							<li><a href="docs/article.html">Article</a></li>
-							<li><a href="docs/comment.html">Comment</a></li>
-							<li><a href="docs/utility.html">Utility</a></li>
-						</ul>
-					</li>
-					<li class="uk-parent"><a href="#"><i class="uk-icon-reorder"></i> Navigations</a>
-						<ul class="uk-nav-sub">
-							<li><a href="docs/nav.html">Nav</a></li>
-							<li><a href="docs/navbar.html">Navbar</a></li>
-							<li><a href="docs/subnav.html">Subnav</a></li>
-							<li><a href="docs/breadcrumb.html">Breadcrumb</a></li>
-							<li><a href="docs/pagination.html">Pagination</a></li>
-							<li><a href="docs/tab.html">Tab</a></li>
-						</ul>
-					</li>
-					<li class="uk-parent"><a href="#"><i class="uk-icon-ok"></i> Elements</a>
-						<ul class="uk-nav-sub">
-							<li><a href="docs/list.html">List</a></li>
-							<li><a href="docs/description-list.html">Description list</a></li>
-							<li><a href="docs/table.html">Table</a></li>
-							<li><a href="docs/form.html">Form</a></li>
-						</ul>
-					</li>
-					<li class="uk-parent"><a href="#"><i class="uk-icon-folder-open"></i> Common</a>
-						<ul class="uk-nav-sub">
-							<li><a href="docs/button.html">Button</a></li>
-							<li><a href="docs/icon.html">Icon</a></li>
-							<li><a href="docs/close.html">Close</a></li>
-							<li><a href="docs/badge.html">Badge</a></li>
-							<li><a href="docs/alert.html">Alert</a></li>
-							<li><a href="docs/thumbnail.html">Thumbnail</a></li>
-							<li><a href="docs/overlay.html">Overlay</a></li>
-							<li><a href="docs/progress.html">Progress</a></li>
-							<li><a href="docs/search.html">Search</a></li>
-							<li><a href="docs/text.html">Text</a></li>
-							<li><a href="docs/animation.html">Animation</a></li>
-						</ul>
-					</li>
-					<li class="uk-parent"><a href="#"><i class="uk-icon-magic"></i> JavaScript</a>
-						<ul class="uk-nav-sub">
-							<li><a href="docs/dropdown.html">Dropdown</a></li>
-							<li><a href="docs/modal.html">Modal</a></li>
-							<li><a href="docs/offcanvas.html">Off-canvas</a></li>
-							<li><a href="docs/switcher.html">Switcher</a></li>
-							<li><a href="docs/tooltip.html">Tooltip</a></li>
-							<li><a href="docs/scrollspy.html">Scrollspy</a></li>
-							<li><a href="docs/smooth-scroll.html">Smooth scroll</a></li>
-						</ul>
-					</li>
-				</ul>
-
-			</div>
-
 		</div>
 	</body>
 </html>
