@@ -73,10 +73,10 @@ html { overflow-y: scroll; }
 .tm-section .uk-heading-large { margin-bottom: 20px; }
 .tm-section .uk-text-large { margin-bottom: 60px; }
 
-.tm-section-color-1 { 
-  background: #2ba3d4 url("../img/bg_teaser.svg") 50% 50% no-repeat; 
+.tm-section-color-1 {
+  background: #2ba3d4 url("../img/bg_teaser.svg") 50% 50% no-repeat;
   background-attachment: fixed;
-  
+
 }
 
 /* Only phones */
@@ -634,4 +634,19 @@ input.sp-input {
 
 .logo{
   width:130px;
+}
+.title{
+  padding: 250px 0;
+}
+input{
+    font-family: monospace;
+}
+h1{
+	font-family: 'Indie Flower';
+	}
+.powerd-by{
+  font-size: 18px;
+}
+.powerd-by-thanks{
+  color: #E74C3C;
 }
