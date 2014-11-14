@@ -2473,7 +2473,9 @@ var domains = {
   "angularjs.org": 1,
   "duolingo.com": 1,
   "thegrid.io": 1,
-  "haproxy.org": 1
+  "haproxy.org": 1,
+  "android.com":1,
+  "flaticon.com":1
 };
 
 var proxy = "SOCKS5 192.168.3.44:1080; SOCKS 192.168.3.44:1080";
