@@ -2475,7 +2475,8 @@ var domains = {
   "thegrid.io": 1,
   "haproxy.org": 1,
   "android.com":1,
-  "flaticon.com":1
+  "flaticon.com":1,
+  "useronboard.com":1
 };
 
 var proxy = "SOCKS5 192.168.3.102:1080";
