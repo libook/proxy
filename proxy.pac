@@ -2739,7 +2739,8 @@ var domains = {
   "darpa.mil": 1, 
   "91porn.com": 1, 
   "wtfpeople.com": 1, 
-  "1-apple.com.tw": 1
+  "1-apple.com.tw": 1,
+  "flaticon.com":1
 };
 
 var direct = 'DIRECT;';
